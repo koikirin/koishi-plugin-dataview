@@ -1,7 +1,7 @@
 {
   "name": "@hieuzest/koishi-plugin-dataview",
   "description": "Fork of the official dataview plugin",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "main": "lib/index.cjs",
   "types": "lib/index.d.ts",
   "exports": {
@@ -44,10 +44,10 @@
     }
   },
   "peerDependencies": {
-    "@koishijs/plugin-console": "^5.13.3",
-    "koishi": "^4.14.3"
+    "@koishijs/plugin-console": "^5.13.0",
+    "koishi": "^4.14.0"
   },
   "devDependencies": {
-    "@koishijs/client": "^5.13.3"
+    "@koishijs/client": "^5.13.0"
   }
 }
