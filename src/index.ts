@@ -38,6 +38,7 @@ class DatabaseProvider extends DataService<DatabaseInfo> {
 
   addListener<K extends Methods>(name: K, refresh = false) {
     this.ctx.console.addListener(`database/${name}`, async (...args) => {
+      console.log(name, ...args.map(deserialize))
       const result = await (this.ctx.database[name] as any)(...args.map(deserialize))
       if (refresh) this.refresh()
       return result === undefined ? result : serialize(result)
